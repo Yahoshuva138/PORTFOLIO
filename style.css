@@ -120,11 +120,34 @@ a {
 }
 
 .hero-text,
+.hero-list,
 .about-grid p,
 .card p,
-.contact-box p {
+.contact-box p,
+.info-card p,
+.project-card p,
+.education-card p,
+.contact-item a,
+.contact-item span {
   color: var(--muted);
   font-size: 1rem;
+}
+
+.hero-list {
+  list-style: none;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.hero-list li {
+  padding: 0.8rem 1rem;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 999px;
+  display: inline-flex;
+  width: fit-content;
 }
 
 .hero-actions {
@@ -199,6 +222,65 @@ a {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem;
+}
+
+.info-card,
+.education-card,
+.project-card,
+.contact-card,
+.skill-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  box-shadow: 0 18px 60px rgba(0,0,0,0.18);
+}
+
+.info-card p,
+.education-card p,
+.project-card p,
+.contact-card p {
+  margin-top: 0.85rem;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.skill-card h4 {
+  margin-bottom: 0.75rem;
+  color: var(--text);
+}
+
+.project-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.project-links a,
+.contact-item a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.contact-card {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.contact-item strong {
+  color: var(--text);
 }
 
 .card-grid {
